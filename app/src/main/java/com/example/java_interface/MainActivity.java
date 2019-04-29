@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT
         );
 
+        buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
 
         Button redButton = new Button(this);
         redButton.setText("Click me, boss");
