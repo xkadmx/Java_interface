@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.graphics.Color;
 
-        C
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,8 +17,15 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout zuzaslayout = new RelativeLayout(this);
         zuzaslayout.setBackgroundColor(Color.BLUE);
 
+        RelativeLayout.LayoutParams buttonDetails = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+
 
         Button redButton = new Button(this);
+        redButton.setText("Click me, boss");
+        redButton.setBackgroundColor(Color.GRAY);
 
         zuzaslayout.addView(redButton);
         setContentView(zuzaslayout);
