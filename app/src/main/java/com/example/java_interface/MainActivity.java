@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         redButton.setText("Click me, boss");
         redButton.setBackgroundColor(Color.GRAY);
 
-        zuzaslayout.addView(redButton);
+        zuzaslayout.addView(redButton, buttonDetails);
+
         setContentView(zuzaslayout);
     }
 }
