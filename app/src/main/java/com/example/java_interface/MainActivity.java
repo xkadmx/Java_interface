@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         RelativeLayout zuzaslayout = new RelativeLayout(this);
+        zuzaslayout.setBackgroundColor(Color.BLUE);
+
+
         Button redButton = new Button(this);
 
         zuzaslayout.addView(redButton);
